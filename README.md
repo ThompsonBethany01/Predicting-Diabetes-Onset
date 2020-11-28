@@ -10,6 +10,17 @@ The major goal of this project is to create a machine learning model that can pr
 Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-diabetes-database).  
   - Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., & Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261--265). IEEE Computer Society Press.
 ## Data Dictionary
+| Feature Name               | Description                                                              |
+|----------------------------|--------------------------------------------------------------------------|
+| Outcome                    | Binary class for diabetic patient or non-diabetic patient                |
+| Pregnancies                | Number of times pregnant                                                 |
+| Glucose                    | Plasma glucose concentration a 2 hours in an oral glucose tolerance test |
+| Blood Pressure             | Diastolic blood pressure (mm Hg)                                         |
+| Skin Thickness             | Triceps skin fold thickness (mm)                                         |
+| Insulin                    | 2-Hour serum insulin (mu U/ml)                                           |
+| BMI                        | Body mass index: weight in kg/(height in m)^2                            |
+| Diabetes Pedigree Function | Measure of genetic influence                                             |
+| Age                        | Age of patient in years                                                  |
 ## Initial Thoughts & Hypotheses
 ### Thoughts
 ### Hypotheses
