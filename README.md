@@ -1,4 +1,4 @@
-# Predicting Diabetes Onset
+![Repo-Header](https://i.pinimg.com/originals/09/53/81/0953813004d675ca814403fbb649f8b7.png)
 ## About the Project
 ### Goals
 The major goal of this project is to create a machine learning model that can predict a patient having diabetes or not. The model will base this on other diagnostic measures in the data, such as BMI and age. The data sample is for female patients at least 21 years of age or older with Pima Indian heritage.
