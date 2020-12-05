@@ -18,7 +18,7 @@ def prep_df(df):
 
     # Blood Pressure
     bp_mean = df.BloodPressure.mean()
-    df.BMI = df.BMI.replace(0,bmi_mean)
+    df.BloodPressure = df.BloodPressure.replace(0,bp_mean)
 
     # Feature Engineering, binning features
 
