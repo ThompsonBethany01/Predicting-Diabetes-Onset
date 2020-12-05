@@ -20,6 +20,14 @@ def prep_df(df):
     bp_mean = df.BloodPressure.mean()
     df.BloodPressure = df.BloodPressure.replace(0,bp_mean)
 
+    # Skin Thickness
+    skin_mean = df.SkinThickness.mean()
+    df.SkinThickness = df.SkinThickness.replace(0,skin_mean)
+
+    # Insulin
+    insulin_mean = df.Insulin.mean()
+    df.Insulin = df.Insulin.replace(0,insulin_mean)
+
     # Feature Engineering, binning features
 
     # 1 = 'early_20s', 2 = 'late_20s', 3 = '30s', 4 = '40s_to_80s']
