@@ -10,6 +10,7 @@ The major goal of this project is to create a machine learning model that can pr
 Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-diabetes-database).  
   - Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., & Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261--265). IEEE Computer Society Press.
 ## Data Dictionary
+### Included in Original Data
 | Feature Name               | Description                                                              |
 |----------------------------|--------------------------------------------------------------------------|
 | Outcome                    | Binary class for diabetic patient or non-diabetic patient                |
@@ -21,6 +22,20 @@ Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-
 | BMI                        | Body mass index: weight in kg/(height in m)^2                            |
 | Diabetes Pedigree Function | Measure of genetic influence                                             |
 | Age                        | Age of patient in years                                                  |
+
+### Features Created
+Using pandas qcut to create equal bins or Kmeans to create clusters on one or two features. Clusters were split into dummy variables.
+
+| Feature Name                | Description                                                                                 |
+|-----------------------------|---------------------------------------------------------------------------------------------|
+| age_bins                    | 4 bins based on Age: (21, 24] < (24, 29] < (29, 41] < (41, 81] labeled 1,2,3,4 respectively |
+| bmi_bins                    | 3 bins based on BMI: (19, 29] < (29, 35] < (35, 67] labeled 1,2,3 respectively              |
+| bp_bins                     | 3 bins based on blood pressure: (24, 68] < (68, 76] < (76, 122] labeled 1,2,3 respectively  |
+| high_bmi_bp                 | Boolean if patient has BMI in levels 2 or 3 and Blood Pressure in level 3                   |
+| age_bmi_cluster             | Cluster created on scaled train features Age and BMI                                        |
+| pregnancy_cluster           | Cluster created on scaled train feature Pregnancies                                         |
+| insulin_and_glucose_cluster | Cluster created on scaled train features Insulin and Glucose                                |
+
 ## Initial Thoughts & Hypotheses
 ### Thoughts
 ### Hypotheses
