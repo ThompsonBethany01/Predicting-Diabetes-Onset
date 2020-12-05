@@ -29,6 +29,14 @@ Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-
 ### Prepare
 ### Explore
 ### Model
+#### Final Model
+| Model    | RandomForest | (max_depth=5, random_state=123)             | ['Glucose', 'Age', 'BMI', 'insulin_glucose_cluster', 'DiabetesPedigreeFunction'] |
+|----------|--------------|---------------------------------------------|----------------------------------------------------------------------------------|
+| DF       | Accuracy     | Recall on True Positive (actually diabetic) | Precision on True Positive (actually diabetic)                                   |
+| Train    | 86%          | 69%                                         | 86%                                                                              |
+| Validate | 79%          | 62%                                         | 76%                                                                              |
+| Test     | 75%          | 57%                                         | 57%                                                                              |
+
 ### Conclusions
 ## How to Reproduce
 ### Steps
