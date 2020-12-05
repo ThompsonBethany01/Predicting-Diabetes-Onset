@@ -6,6 +6,8 @@ The major goal of this project is to create a machine learning model that can pr
 ### Deliverables
 - Jupyter notebook with full analysis process
 - Presentation on key insights and model performance
+- Tableau Storybooks
+  - Visualizing Clusters [here](https://public.tableau.com/profile/thompson.bethany.01#!/vizhome/ClustersWorkbook/Clusters?publish=yes)
 ### Acknowledgments
 Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-diabetes-database).  
   - Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., & Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261--265). IEEE Computer Society Press.
