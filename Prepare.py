@@ -27,11 +27,11 @@ def prep_df(df):
     df['age_bins'] = pd.qcut(df.Age, 4, labels=[1,2,3,4])
 
     # 1 = low, 2 = medium, 3 = high
-    # (-0.001, 29.0] < (29.0, 34.867] < (34.867, 67.1]
+    # (18.198999999999998, 29.3] < (29.3, 34.733] < (34.733, 67.1]
     df['bmi_bins'] = pd.qcut(df.BMI, 3, labels=[1,2,3])
 
     # 1 = low, 2 = medium, 3 = high
-    # (-0.001, 66.0] < (66.0, 76.0] < (76.0, 122.0]
+    # (23.999, 68.0] < (68.0, 76.0] < (76.0, 122.0]
     df['bp_bins'] = pd.qcut(df.BloodPressure, 3, labels=[1,2,3])
 
     # creating column for patient with both high bp and bmi
