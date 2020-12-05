@@ -1,7 +1,7 @@
 ![Repo-Header](https://i.pinimg.com/originals/09/53/81/0953813004d675ca814403fbb649f8b7.png)
 ## About the Project
 ### Goals
-The major goal of this project is to create a machine learning model that can predict a patient having diabetes or not. The model will base this on other diagnostic measures in the data, such as BMI and age. The data sample is for female patients at least 21 years of age or older with Pima Indian heritage.
+The major goal of this project is to create a machine learning model that can predict a patient having diabetes or not. The model will base this on other diagnostic measures in the data, such as BMI and age. The data sample is for female patients at least 21 years of age or older with Pima Native American heritage.
 ### Background
 ### Deliverables
 - Jupyter notebook with full analysis process
@@ -45,12 +45,12 @@ Using pandas qcut to create equal bins or Kmeans to create clusters on one or tw
 ### Explore
 ### Model
 #### Final Model
-| Model    | RandomForest | (max_depth=5, random_state=123)             | ['Glucose', 'Age', 'BMI', 'insulin_glucose_cluster', 'DiabetesPedigreeFunction'] |
-|----------|--------------|---------------------------------------------|----------------------------------------------------------------------------------|
-| DF       | Accuracy     | Recall on True Positive (actually diabetic) | Precision on True Positive (actually diabetic)                                   |
-| Train    | 86%          | 69%                                         | 86%                                                                              |
-| Validate | 79%          | 62%                                         | 76%                                                                              |
-| Test     | 75%          | 57%                                         | 57%                                                                              |
+| Model    | RandomForest | (max_depth=5, random_state=123)             | ['Glucose','Age','BMI','insulin_glucose_cluster','DiabetesPedigreeFunction'] |
+|----------|--------------|---------------------------------------------|------------------------------------------------------------------------------|
+| DF       | Accuracy     | Recall on Positive (predicting diabetic)    | Precision on Positive (predicting diabetic)                                  |
+| Train    | 86%          | 75%                                         | 84%                                                                          |
+| Validate | 78%          | 64%                                         | 73%                                                                          |
+| Test     | 75%          | 63%                                         | 70%                                                                          |
 
 ### Conclusions
 ## How to Reproduce
