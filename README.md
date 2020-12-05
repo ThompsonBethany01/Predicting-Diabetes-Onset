@@ -23,6 +23,19 @@ Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-
 | Diabetes Pedigree Function | Measure of genetic influence                                             |
 | Age                        | Age of patient in years                                                  |
 
+##### Domain Knowledge
+<details>
+  <summary> Click to Expand </summary>
+  
+  - Glucose
+  - Blood Pressure
+  - Skin Thickness
+  - Insulin
+  - BMI (Body Mass Index)
+  - Diabetes Pedigree Function
+  
+</details>
+
 ### Features Created
 Using pandas qcut to create equal bins or Kmeans to create clusters on one or two features. Clusters were split into dummy variables.
 
@@ -39,13 +52,28 @@ Using pandas qcut to create equal bins or Kmeans to create clusters on one or tw
 ## Initial Thoughts & Hypotheses
 ### Thoughts
 ### Hypotheses
+Hypothesis  
+> Null hypothesis:  
+> Alternative hypothesis:  
+> Results  
+
+Hypothesis  
+> Null hypothesis:  
+> Alternative hypothesis:  
+> Results  
+
+Hypothesis  
+> Null hypothesis:  
+> Alternative hypothesis:  
+> Results  
+
 ## Project Steps
 ### Acquire
 ### Prepare
 ### Explore
 ### Model
 #### Final Model
-| Model    | RandomForest | (max_depth=5, random_state=123)             | ['Glucose','Age','BMI','insulin_glucose_cluster','DiabetesPedigreeFunction'] |
+| Model    | RandomForest | (max_depth=5, random_state=123)             | 'Glucose', 'Age', 'BMI', <br> 'insulin_glucose_cluster', 'DiabetesPedigreeFunction' |
 |----------|--------------|---------------------------------------------|------------------------------------------------------------------------------|
 | DF       | Accuracy     | Recall on Positive (predicting diabetic)    | Precision on Positive (predicting diabetic)                                  |
 | Train    | 86%          | 75%                                         | 84%                                                                          |
@@ -55,6 +83,12 @@ Using pandas qcut to create equal bins or Kmeans to create clusters on one or tw
 ### Conclusions
 ## How to Reproduce
 ### Steps
-### Tools & Requirements
+1. ~Go over this Readme.md file.~ ✅
+2. Download Data_Analysis.ipynb, Prepare.py, and the dataset in your working directory.
+3. Run this notebook.
+### Tools Used
+- Pandas version ___
+- Matplotlib.pyplot version ___
+- Seaborn version ___
 ## Creator
 [Bethany Thompson](https://github.com/ThompsonBethany01)
