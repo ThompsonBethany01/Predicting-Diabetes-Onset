@@ -1,4 +1,33 @@
 ![Repo-Header](https://i.pinimg.com/originals/09/53/81/0953813004d675ca814403fbb649f8b7.png)
+
+## Table of Contents
+1. About the Project  
+  a. [Goals](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#goals)  
+  b. [Background](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Background)    
+  c. [Deliverables](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Deliverables)    
+  d. [Acknowledgments](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Acknowledgments)    
+  
+2. Data Dictionary  
+  a. [Original Dataframe](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Included-in-Original-Data)    
+  b. [Added Features](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Features-Created)    
+  
+3. Initial Thoughts & Hypotheses  
+  a. [Thoughts](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Thoughts)    
+  b. [Hypotheses](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Hypotheses)    
+  
+4. Project Steps  
+  a. [Acquire](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Acquire)    
+  b. [Prepare](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Prepare)    
+  c. [Explore](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Explore)    
+  d. [Model](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Model)    
+  e. [Conclusions](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Conclusions)    
+  
+5. How to Reproduce  
+  a. [Steps](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Steps)    
+  b. [Requirements](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Requirements)    
+  
+6. Author
+
 ## About the Project
 ### Goals
 The major goal of this project is to create a machine learning model that can predict a patient having diabetes or not. The model will base this on other diagnostic measures in the data, such as BMI and age. The data sample is for female patients at least 21 years of age or older with Pima Native American heritage.
@@ -109,9 +138,9 @@ Hypothesis
 1. ~Go over this Readme.md file.~ ✅
 2. Download Data_Analysis.ipynb, Prepare.py, and the dataset in your working directory.
 3. Run this notebook.
-### Tools Used
+### Requirements
 - Pandas version ___
 - Matplotlib.pyplot version ___
 - Seaborn version ___
-## Creator
+## Author
 [Bethany Thompson](https://github.com/ThompsonBethany01)
