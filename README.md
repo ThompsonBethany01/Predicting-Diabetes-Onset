@@ -5,7 +5,8 @@
   a. [Goals](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#goals)  
   b. [Background](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Background)    
   c. [Deliverables](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Deliverables)    
-  d. [Acknowledgments](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Acknowledgments)    
+  d. [Project Outline](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Project-Outline)  
+  e. [Acknowledgments](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Acknowledgments)    
   
 2. Data Dictionary  
   a. [Original Dataframe](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Included-in-Original-Data)    
@@ -45,6 +46,9 @@ According to the U.S. Department of Health and Human Services [here](https://asp
   - View Canva presentation [here](https://www.canva.com/design/DAEPT1-nivk/z_fSs84zumIo8slllAszCA/view?utm_content=DAEPT1-nivk&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu)
 - Tableau Storybooks
   - Visualizing Clusters [here](https://public.tableau.com/profile/thompson.bethany.01#!/vizhome/ClustersWorkbook/Clusters?publish=yes)
+  
+### Project Outline  
+  
 ### Acknowledgments
 Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-diabetes-database).  
   - Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., & Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261--265). IEEE Computer Society Press.
