@@ -24,8 +24,7 @@
   e. [Conclusions](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Conclusions)    
   
 5. How to Reproduce  
-  a. [Steps](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Steps)    
-  b. [Requirements](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Requirements)    
+  a. [Steps](https://github.com/ThompsonBethany01/Predicting-Diabetes-Onset#Steps)     
   
 6. Author
 
@@ -48,7 +47,10 @@ According to the U.S. Department of Health and Human Services [here](https://asp
   - Visualizing Clusters [here](https://public.tableau.com/profile/thompson.bethany.01#!/vizhome/ClustersWorkbook/Clusters?publish=yes)
   
 ### Project Outline  
-  
+> README: Project description, outline, etc.  
+> Data_Analysis.ipynb: Complete Data Science pipeline of the project  
+> Prepare.py: Module holding functions to prepare the dataframe  
+
 ### Acknowledgments
 Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-diabetes-database).  
   - Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., & Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261--265). IEEE Computer Society Press.
@@ -123,10 +125,34 @@ Hypothesis
 
 ## Project Steps
 ### Acquire
+Data acquired from Kaggle [here](https://www.kaggle.com/uciml/pima-indians-diabetes-database). The dataframe is saved as a csv file and has over 700 observations. The nine features in the original dataframe are diagnostic measures of the patients (observations). Null values appear to be filled with 0.
+
 ### Prepare
+Functions to prepare the dataframe are stored within the PRepare.py module. The module functions:
+- replace 0 with the feature mean where appropriate (i.e. a patient cannot have a 0 BMI)
+- bin features by pandas qcut and kmeans clustering
+- split into train, validate, test (70% - 20% - 10% respectively)
+- scale the df's using MinMaxScaler
+
 ### Explore
+During exploration, I looked at interaction of Independent features vs. Outcome, Independent vs. Indpendent Features, and cluster subgroups vs. Outcome.
+
 ### Model
+Various classification models were created by fitting to the train df. Models evaluated on train were:
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors
+- Ridge Classifier
+- SGD Classifier
+
+Models evaluated on the validate df were:
+- Decision Tree
+- Random Forest
+- K-Nearest Neighbors
+
 #### Final Model
+Random Forest was the final model selected. It performed the best not only on accuracy, but recall and precision on Positive (predicted diabetic) cases. Because False Negative cases are the most harmful, emphasis was selecting a model the did best on Recall.
+
 | Model    | RandomForest | (max_depth=5, random_state=123)             | 'Glucose', 'Age', 'BMI', <br> 'insulin_glucose_cluster', 'DiabetesPedigreeFunction' |
 |----------|--------------|---------------------------------------------|------------------------------------------------------------------------------|
 | DF       | Accuracy     | Recall on Positive (predicting diabetic)    | Precision on Positive (predicting diabetic)                                  |
@@ -137,14 +163,12 @@ Hypothesis
 ![Random-Forest-Guide](https://i.pinimg.com/originals/7b/28/3f/7b283f5e05af1fd7f6ec949ceb847875.png)
 
 ### Conclusions
+
+
 ## How to Reproduce
-### Steps
 1. ~Go over this Readme.md file.~ ✅
 2. Download Data_Analysis.ipynb, Prepare.py, and the dataset in your working directory.
 3. Run this notebook.
-### Requirements
-- Pandas version ___
-- Matplotlib.pyplot version ___
-- Seaborn version ___
+
 ## Author
 [Bethany Thompson](https://github.com/ThompsonBethany01)
