@@ -135,7 +135,7 @@ def create_clusters(X_train_scaled, X_validate_scaled, X_test_scaled, train, val
     Z = X_test_scaled[features]
     
     # create object with 4 clusters
-    kmeans = KMeans(n_clusters=n)
+    kmeans = KMeans(n_clusters=n, random_state = 123)
 
     # fit to the features chosen
     kmeans.fit(X)
