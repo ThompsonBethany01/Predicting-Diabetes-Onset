@@ -173,10 +173,13 @@ Random Forest was the final model selected. It performed the best not only on ac
 | Validate | 78%          | 64%                                         | 73%                                                                          |
 | Test     | 75%          | 63%                                         | 70%                                                                          |
 
-![Random-Forest-Guide](https://i.pinimg.com/originals/7b/28/3f/7b283f5e05af1fd7f6ec949ceb847875.png)
+#### How It Works
+A random forest model contains decision trees that operate together. Each tree randomly picks features with replacement ("bagging") before making its own prediction. The outcome with the most votes becomes the prediction. ![Random-Forest-Guide](https://i.pinimg.com/originals/e0/28/f2/e028f276032b6ac4d9350eb0d3d1ae4f.png)
 
 ### Conclusions
-Glucose had the highest impact on modeling, followed by age and BMI. However, only one cluster subgroup was significantly important in the final model, which was a cluster based on glucose.  
+Glucose had the highest impact on modeling, followed by age and BMI. However, only one cluster subgroup was significantly important in the final model, which was a cluster based on glucose. Next steps include creating different clusters to improve model performance.  
+
+The final model chosen was a random forest with max depth of 5. The model not only performed best on accuracy (predicting patient Outcome correctly) but also on positive case recall and precision (predicting a patient Outcome of diabetic correctly). This is important because the longer a diabeti patient goes with a diagnosis, the more complications can arise, such as blindness and limb amputation. 
 
 ## How to Reproduce
 1. ~Go over this Readme.md file.~ ✅
