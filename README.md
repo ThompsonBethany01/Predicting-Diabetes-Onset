@@ -176,7 +176,7 @@ Random Forest was the final model selected. It performed the best not only on ac
 #### How It Works
 A random forest model contains decision trees that operate together. Each tree randomly picks features with replacement ("bagging") before making its own prediction. The outcome with the most votes becomes the prediction.
    
-<p>align="center"
+<p align="center">
   <img src="https://i.pinimg.com/originals/e0/28/f2/e028f276032b6ac4d9350eb0d3d1ae4f.png">
 </p>
 
