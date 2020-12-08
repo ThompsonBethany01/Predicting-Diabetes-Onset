@@ -174,7 +174,11 @@ Random Forest was the final model selected. It performed the best not only on ac
 | Test     | 75%          | 63%                                         | 70%                                                                          |
 
 #### How It Works
-A random forest model contains decision trees that operate together. Each tree randomly picks features with replacement ("bagging") before making its own prediction. The outcome with the most votes becomes the prediction. ![Random-Forest-Guide](https://i.pinimg.com/originals/e0/28/f2/e028f276032b6ac4d9350eb0d3d1ae4f.png)
+A random forest model contains decision trees that operate together. Each tree randomly picks features with replacement ("bagging") before making its own prediction. The outcome with the most votes becomes the prediction.
+   
+<p>align="center"
+  <img src="https://i.pinimg.com/originals/e0/28/f2/e028f276032b6ac4d9350eb0d3d1ae4f.png">
+</p>
 
 ### Conclusions
 Glucose had the highest impact on modeling, followed by age and BMI. However, only one cluster subgroup was significantly important in the final model, which was a cluster based on glucose. Next steps include creating different clusters to improve model performance.  
