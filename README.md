@@ -31,6 +31,7 @@
 ## About the Project
 ### Goals
 The major goal of this project is to create a machine learning model that can predict a patient having diabetes or not. The model will base this on other diagnostic measures in the data, such as BMI and age. The data sample is for female patients at least 21 years of age or older with Pima Native American heritage.
+
 ### Background
 According to the U.S. Department of Health and Human Services [here](https://aspe.hhs.gov/report/diabetes-national-plan-action/importance-early-diabetes-detection),
 > "Early detection and treatment of diabetes is an important step toward keeping people with diabetes healthy. It can help to reduce the risk of serious 
@@ -107,21 +108,31 @@ Using pandas qcut to create equal bins or Kmeans to create clusters on one or tw
 
 ## Initial Thoughts & Hypotheses
 ### Thoughts
+Research has shown that diabetes has many risk factors - health risks that increase a patient's predisposition to the disease. These include have a higher body mass index. Will this be reflected in the data from this project?
 ### Hypotheses
-Hypothesis  
-> Null hypothesis:  
-> Alternative hypothesis:  
-> Results  
+Hypothesis - Age vs. Outcome   
+```
+Null hypothesis: Age does not influence the rate of diabetes diagnosis.   
+Alternative hypothesis: As age increases, so does the rate of diabetes diagnosis (in female patients +21 with Pima Indian heritage). 
+Test: Pearson correlation coefficient   
+Results: With a p-value less than alpha and a correlation coefficient of .24, we reject the null hypothesis.
+```   
 
-Hypothesis  
-> Null hypothesis:  
-> Alternative hypothesis:  
-> Results  
+Hypothesis - Body Mass Index vs. Outcome  
+```
+Null hypothesis: There is no significant difference between BMI and diabetes diagnosis.   
+Alternative hypothesis:</kbd> Populations with higher BMI have a significantly higher rate of diabetes (in female patients +21 with Pima Indian heritage).  
+Test: One-tailed, one-sample T-test  
+Results: With a p-value less than alpha and a t-value of 3.0, we reject the null hypothesis.   
+```
 
-Hypothesis  
-> Null hypothesis:  
-> Alternative hypothesis:  
-> Results  
+Hypothesis - Blood Pressure vs. Outcome  
+```
+Null hypothesis: There is no significant difference between blood pressure and diabetes diagnosis.  
+Alternative hypothesis: Populations with higher blood pressure have a significantly higher rate of diabetes (in female patients +21 with Pima Indian heritage).    
+Test: One-tailed, one-sample T-test  
+Results: With a p-value greater than alpha, we fail to reject the null hypothesis.   
+```
 
 ## Project Steps
 ### Acquire
@@ -138,6 +149,8 @@ Functions to prepare the dataframe are stored within the PRepare.py module. The 
 During exploration, I looked at interaction of Independent features vs. Outcome, Independent vs. Indpendent Features, and cluster subgroups vs. Outcome.
 
 ### Model
+First, a baseline model was created to compare the following model performances. The baseline was based on the most common outcome from the train df - 0 (not diabetic). Using 0 as the predicting for each observation, the baseline was 66% accurate on train. Note: Because each observation is predicted negative, the recall rate is 0%.  
+
 Various classification models were created by fitting to the train df. Models evaluated on train were:
 - Decision Tree
 - Random Forest
@@ -163,7 +176,7 @@ Random Forest was the final model selected. It performed the best not only on ac
 ![Random-Forest-Guide](https://i.pinimg.com/originals/7b/28/3f/7b283f5e05af1fd7f6ec949ceb847875.png)
 
 ### Conclusions
-
+Glucose had the highest impact on modeling, followed by age and BMI. However, only one cluster subgroup was significantly important in the final model, which was a cluster based on glucose.  
 
 ## How to Reproduce
 1. ~Go over this Readme.md file.~ ✅
