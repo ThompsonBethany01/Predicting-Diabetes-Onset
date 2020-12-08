@@ -55,6 +55,7 @@ According to the U.S. Department of Health and Human Services [here](https://asp
 ### Acknowledgments
 Data from UCI Machine Learning [here](https://www.kaggle.com/uciml/pima-indians-diabetes-database).  
   - Smith, J.W., Everhart, J.E., Dickson, W.C., Knowler, W.C., & Johannes, R.S. (1988). Using the ADAP learning algorithm to forecast the onset of diabetes mellitus. In Proceedings of the Symposium on Computer Applications and Medical Care (pp. 261--265). IEEE Computer Society Press.
+  
 ## Data Dictionary
 ### Included in Original Data
 | Feature Name               | Description                                                              |
@@ -109,6 +110,7 @@ Using pandas qcut to create equal bins or Kmeans to create clusters on one or tw
 ## Initial Thoughts & Hypotheses
 ### Thoughts
 Research has shown that diabetes has many risk factors - health risks that increase a patient's predisposition to the disease. These include have a higher body mass index. Will this be reflected in the data from this project?
+
 ### Hypotheses
 Hypothesis - Age vs. Outcome   
 ```
@@ -183,7 +185,7 @@ A random forest model contains decision trees that operate together. Each tree r
 ### Conclusions
 Glucose had the highest impact on modeling, followed by age and BMI. However, only one cluster subgroup was significantly important in the final model, which was a cluster based on glucose. Next steps include creating different clusters to improve model performance.  
 
-The final model chosen was a random forest with max depth of 5. The model not only performed best on accuracy (predicting patient Outcome correctly) but also on positive case recall and precision (predicting a patient Outcome of diabetic correctly). This is important because the longer a diabeti patient goes with a diagnosis, the more complications can arise, such as blindness and limb amputation. 
+The final model chosen was a random forest with max depth of 5. The model not only performed best on accuracy (predicting patient Outcome correctly) but also on positive case recall and precision (predicting a patient Outcome of diabetic correctly). This is important because the longer a diabetic patient goes without a diagnosis, the more complications can arise such as blindness and limb amputation. 
 
 ## How to Reproduce
 1. ~Go over this Readme.md file.~ ✅
